@@ -4,6 +4,7 @@ import React from 'react';
 import { Card, CardContent, Typography } from "@material-ui/core";
 import "./InfoBox.css";
 
+// onClick is under used in props
 function InfoBox({ title, cases, total, active, isRed, ...props }) {
   console.log(title, active);
   return (

@@ -25,8 +25,9 @@ body {
 }
 
 .app__header > h1 {
-  color: #fc3c3c;
+  color:Green;
   font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .app__stats {
@@ -49,6 +50,8 @@ body {
   margin-top: 1rem;
 }
 
+
+  /* For responsivness */
 @media (max-width: 990px) {
   .app {
     flex-direction: column;

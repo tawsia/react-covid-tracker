@@ -20,7 +20,9 @@ import numeral from "numeral";
 import Map from "./Map";
 import "leaflet/dist/leaflet.css";
 
+
 const App = () => {
+  // state in react is used to contain info about the component
   const [country, setInputCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [countries, setCountries] = useState([]);
@@ -80,7 +82,7 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>COVID-19 Tracker</h1>
+          <h1>COVID-19 TRACKER</h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
@@ -96,6 +98,7 @@ const App = () => {
         </div>
         <div className="app__stats">
           <InfoBox
+          // handles cases info boxes
             onClick={(e) => setCasesType("cases")}
             title="Coronavirus Cases"
             isRed
@@ -126,11 +129,13 @@ const App = () => {
           zoom={mapZoom}
         />
       </div>
+      {/* For right side */}
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
-            <h3>Live Cases by Country</h3>
+            <h3><strong>Live Cases by Country</strong></h3>
             <Table countries={tableData} />
+            {/* handles cases and line chart */}
             <h3>Worldwide new {casesType}</h3>
             <LineGraph casesType={casesType} />
           </div>

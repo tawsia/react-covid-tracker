@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import numeral from "numeral";
 
+// All these can be found in documentation of chart js which is now updated
 const options = {
   legend: {
     display: false,

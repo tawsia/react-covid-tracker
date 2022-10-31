@@ -14,13 +14,13 @@
 
 .info-flag img {
   width: 100px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .info-name {
   font-size: 20px;
   font-weight: bold;
-  color: #555;
+  color: rgb(207, 38, 38);
 }
 
 .info-container {

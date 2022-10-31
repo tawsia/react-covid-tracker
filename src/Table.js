@@ -2,6 +2,7 @@ import React from "react";
 import "./Table.css";
 import numeral from "numeral";
 
+// For provinding the live cases of the country
 function Table({ countries }) {
   return (
     <div className="table">

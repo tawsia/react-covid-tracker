@@ -1,8 +1,8 @@
 .table {
   margin-top: 20px;
   overflow: scroll;
-  color: #6a5d5d;
-  background-color: white;
+  color: #473232;
+  background-color: rgb(203, 200, 200);
   height: 400px;
 }
 
